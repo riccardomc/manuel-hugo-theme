@@ -8,7 +8,7 @@
   <div>
   {{ range $Pages.GroupByDate "2006" }}
     <h2>{{ .Key }}</h2>
-    {{ range .Pages.GroupByDate "January"}}
+    {{ range .Pages.GroupByDate "january"}}
     {{ if $home }}<h3>{{ .Key }}</h3>{{ end }}
     <ul class="archive">
     {{ range .Pages }}
