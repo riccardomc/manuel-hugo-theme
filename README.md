@@ -1,54 +1,12 @@
-![Demo](https://raw.githubusercontent.com/RainerChiang/simpleness/master/images/screenshot.png)
+## Manuel Hugo Theme
 
-## hugo theme simpleness
+Like many others at the end of 2020 I was going through a moment of self-introspection.
+Googling around 'minimalism' I stumbled upon [Manuel Moreale](https://manuelmoreale.com/)
+and I thought it was beautiful.
 
-simpleness is a concise theme for hugo which is forked from [contrast-hugo](https://github.com/niklasbuschmann/contrast-hugo).
+I also have a personal page. I didn't update it in years, but it was a blog once.
+Manuel's website made me want to write again. I wanted something personal, so I looked
+for Hugo themes that were simple enough.
 
-[Demo](https://rainerchiang.github.io/simpleness/)
-
-### Features
-
-- Responsive
-- MathJax suport
-- Google Analytics support
-- Comment systems include: disqus, valine
-
-### TODO
-
-- [ ] Table of content
-- [ ] Pagination for posts
-
-## Quick Start
-
-### 1. Install Hugo
-
-[Download](https://github.com/gohugoio/hugo/releases) the appropriate version for your platform. 
-
-I used [hugo_extended_0.75.1_Linux-64bit.deb](https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_Linux-64bit.deb) to develop this theme.
-
-### 2. Create a New Site
-
-```shell
-hugo new site myBlog
-```
-
-### 3. Use hugo theme simpleness
-
-```shell
-cd myBlog
-git submodule add https://github.com/RainerChiang/simpleness.git themes/simpleness
-```
-
-copy the content of exampleSite
-
-```shell
-cp -r themes/simpleness/exampleSite/content .
-```
-
-build site
-
-```shell
-hugo server
-```
-
-then, open http://localhost:1313/ in your browser。
+I found [simpleness](https://themes.gohugo.io/simpleness/). I wanted to make it mine. I
+removed many things. Is not perfect, but here it is.
