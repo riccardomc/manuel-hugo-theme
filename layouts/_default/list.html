@@ -9,7 +9,7 @@
   {{ range $Pages.GroupByDate "2006" }}
     <h2>{{ .Key }}</h2>
     {{ range .Pages.GroupByDate "January"}}
-    <h3>{{ .Key | lower }}</h3>
+    <h3>{{ .Key | lower }} </h3>
     <ul class="archive">
     {{ range .Pages }}
       <li>
