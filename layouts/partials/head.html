@@ -16,6 +16,14 @@
   <link rel="alternate" type="application/rss+xml" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="{{ .Site.Title }}">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  {{- if isset .Site.Params "panel_bear_site_id" }}
+  <!-- Panelbear Analytics - We respect your privacy -->
+  <script async src="https://cdn.panelbear.com/analytics.js?site=YOUR_SITE_ID"></script>
+  <script>
+      window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+      panelbear('config', { site: '{{ .Site.Params.panel_bear_site_id }}' });
+  </script>
+  {{- end }}
   {{- if or .Params.enableMathJax .Site.Params.enableMathJax }}
   <link 
     rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" 
