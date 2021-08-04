@@ -1,9 +1,5 @@
 {{ define "main" }}
 {{ $Pages := .Pages }}
-{{ $home := .IsHome }}
-{{ if .IsHome }}
-  {{ $Pages = where site.RegularPages "Type" "in" .Site.Params.mainSections }}
-{{ end }} 
 <article class="home">
   <div>
   {{ range $Pages.GroupByDate "2006" }}
