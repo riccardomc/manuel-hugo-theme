@@ -25,6 +25,9 @@
       panelbear('config', { site: '{{ .Site.Params.panel_bear_site_id }}' });
   </script>
   {{- end }}
+  {{- if isset .Site.Params "clicky_data_id" }}
+  <script async data-id="{{ .Site.Params.clicky_data_id }}" src="//static.getclicky.com/js"></script>
+  {{- end }}
   {{- if or .Params.enableMathJax .Site.Params.enableMathJax }}
   <link 
     rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" 
